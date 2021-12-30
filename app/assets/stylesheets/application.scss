@@ -4,3 +4,39 @@
  */
 
  @import "bootstrap/scss/bootstrap";
+
+/* hader */
+
+#logo {
+  font-size: 1.2em;
+  color: black;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar {
+  justify-content: space-between;
+  background: linear-gradient(#de4d4d, #f5a500);
+}
+
+
+/* _header(仮) 
+
+.navbar {
+  background: linear-gradient(#de4d4d, #f5a500);
+}
+
+#logo {
+  font-size: 1.7em;
+  color: black;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
+*/
