@@ -1,50 +1,60 @@
-<nav class="navbar navbar-expand bg-primary navbar-dark">
-  <div class="navbar-brand">
-    <%= link_to "FASHION-ONE", root_path, id: "logo" %>
+<div class="home-main">
+  <nav class="navbar fixed-top navbar-expand bg-dark navbar-dark">
+    <div class="navbar-brand">
+      <%= link_to "FASHION-ONE", root_path, id: "logo" %>
+    </div>
+    <div class="navbar-nav">
+      <%= link_to "メニュー1", root_path, class: "nav-item nav-link text-white" %>
+      <%= link_to "メニュー2", root_path, class: "nav-item nav-link text-white" %>
+      <%= link_to "メニュー3", root_path, class: "nav-item nav-link text-white" %>
+    </div>
+  </nav>
+  <div class="jumbotron text-center">
+    <div class="title">
+      <div>
+      <h1>FASHION-ONE</h1>
+      <p>あなたにぴったりのお店を探そう</p>
+    </div>
   </div>
-  <div class="navbar-nav">
-    <%= link_to "メニュー1", root_path, class: "nav-item nav-link text-white" %>
-    <%= link_to "メニュー2", root_path, class: "nav-item nav-link text-white" %>
-    <%= link_to "メニュー3", root_path, class: "nav-item nav-link text-white" %>
-  </div>
-</nav>
+</div>
 
-
-<!-- 
-<%= link_to "1", root_path %>
-<%= link_to "2", root_path %>
-<%= link_to "3", root_path %>
-
-<a class="nav-item nav-link" href="#">メニュー１</a>
-<a class="nav-item nav-link" href="#">メニュー２</a>
-<a class="nav-item nav-link" href="#">メニュー３</a>
-
-<%= link_to "1", root_path, class: "dropdown-item" %>
-<%= link_to "2", root_path, class: "dropdown-item" %>
-
-
-<div class="collapse navbar-collapse" id="navbarNav">
-  <div class="navbar-nav">
-    <%= link_to "メニュー1", root_path, class: "nav-item nav-link text-white" %>
-    <%= link_to "メニュー2", root_path, class: "nav-item nav-link text-white" %>
-    <%= link_to "メニュー3", root_path, class: "nav-item nav-link text-white" %>
+<div class="search-form">
+  <h1>エリア・キーワードから探す</h1>
+  <div class="input-group">
+    <input type="text" id="txt-search" class="form-control input-group-prepend" placeholder="エリア［例: 渋谷］"></input>
+    <input type="text" id="txt-search" class="form-control input-group-prepend" placeholder="キーワード［例: ユニクロ］"></input>
+    <span class="input-group-btn input-group-append">
+      <submit type="submit" id="btn-search" class="btn btn-primary"><i class="fas fa-search"></i> 検索</submit>
+    </span>
   </div>
 </div>
 
 
 
-<nav class="navbar navbar-expand-md pg-primary navbar-dark">
-  <%= link_to "FASHION-ONE", root_path, id: "logo" %>
-  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <div class="navbar-nav">
-      <%= link_to "メニュー1", root_path, class: "dropdown-item text-white" %>
-      <%= link_to "メニュー2", root_path, class: "dropdown-item text-white" %>
-      <%= link_to "メニュー3", root_path, class: "dropdown-item text-white" %>
-    </div>
-  </div>
-</nav>
 
+
+<!--
+<div class="search-form">
+  <div class="input-group">
+    <input type="text" id="txt-search" class="form-control input-group-prepend" placeholder="エリア［例: 渋谷］"></input>
+    <input type="text" id="txt-search" class="form-control input-group-prepend" placeholder="キーワード［例: ユニクロ］"></input>
+
+    <span class="input-group-btn input-group-append">
+      <submit type="submit" id="btn-search" class="btn btn-primary"><i class="fas fa-search"></i> 検索</submit>
+    </span>
+  </div>
+</div>
+-->
+
+<!-- 
+<div class="search-form">
+  <form action="/shops/searches" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+
+    <input type="text" name="area" id="area-search-field" value="" placeholder="エリア[例：下北沢]" autocomplete="off" class="search-box__content left-content">
+
+    <input type="text" name="keyword" id="keyword-field" value="" placeholder="キーワード[例：yohji yamamoto]" autocomplete="off" class="search-box__content">
+
+    <button name="button" type="submit" class="search-box__submit" id="search-submit-btn">検 索</button>
+  </form>
+</div>
 -->
