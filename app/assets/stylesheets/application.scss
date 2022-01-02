@@ -22,9 +22,10 @@
 /* static_pages home */
 
 .jumbotron {
+  background-color: black;
   background-image: url(assets/background-image.jpeg);
   padding-top: 90px;
-  color: white;
+  color: black;
   h1 {
     font-weight: bold;
     font-size: 62px;
@@ -35,14 +36,14 @@
   }
 }
 
-.title {
+.home-title {
   margin-top: 60px;
   min-height: 30vh;
 }
 
 /* static_pages search */
 
-.search-form {
+.search {
   padding: 0 80px;
   h1 {
     padding-bottom: 10px;
@@ -74,6 +75,54 @@
     margin-left: 20px;
   }
 }
+
+/* static_pages genre */
+
+.genre {
+  display: flex;
+  gap: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1rf));
+  margin-bottom: 5px;
+  margin-left: 100px;
+  flex-wrap: wrap;
+}
+
+.genre-title {
+  padding-top:48px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+.genre-list {
+  background-color: black;
+  position: relative; /*相対配置*/
+  white-space: nowrap;
+  margin: 10px;
+  :hover {
+    opacity: 0.7;
+  }
+}
+
+.genre-name {
+  padding: 10px;
+  position: absolute; /*絶対配置*/
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.genre-image {
+  width: 170px;
+  height: 160px;
+  opacity: 0.7;
+}
+
 
 
 /* _header(仮) 
